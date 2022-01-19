@@ -4,12 +4,12 @@ import "./App.css";
 import SingleCard from "./components/SingleCard";
 
 const cardImages = [
-  { src: "/img/NoamElimelech.jpeg", matched: false },
-  { src: "/img/kedusha.jpeg", matched: false },
-  { src: "/img/ring-1.png", matched: false },
-  { src: "/img/scroll-1.png", matched: false },
-  { src: "/img/shield-1.png", matched: false },
-  { src: "/img/sword-1.png", matched: false },
+  { src: "/img/smilingEmoji.png", matched: false },
+  { src: "/img/sadEmoji.png", matched: false },
+  { src: "/img/angryEmoji.png", matched: false },
+  { src: "/img/yikesEmoji.png", matched: false },
+  { src: "/img/thinkingEmoji.png", matched: false },
+  { src: "/img/mindblownEmoji.png", matched: false },
 ];
 
 function App() {
