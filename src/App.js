@@ -18,7 +18,15 @@ function App() {
   const [choiceOne, setChoiceOne] = useState(null);
   const [choiceTwo, setChoiceTwo] = useState(null);
   const [disabled, setDisabled] = useState(false);
+  const [emojisFlipped, setEmojisFlipped] = useState(0);
 
+  const totalEmojis = cardImages.length;
+
+  // const flippedEmojis = cardImages.map((card) => {
+  //   if (card.matched === false) {
+  //     return setEmojisFlipped + 1;
+  //   }
+  // });
   //shuffle card
   const shuffleCards = () => {
     const shuffledCards = [...cardImages, ...cardImages]
@@ -29,6 +37,7 @@ function App() {
 
     setCards(shuffledCards);
     setTurns(0);
+    setEmojisFlipped(0);
   };
 
   //handle choice
@@ -42,6 +51,7 @@ function App() {
     if (choiceOne && choiceTwo) {
       setDisabled(true);
       if (choiceOne.src === choiceTwo.src) {
+        setEmojisFlipped((emoji) => emoji + 1);
         setCards((prevCards) => {
           return prevCards.map((card) => {
             if (card.src === choiceOne.src) {
@@ -87,6 +97,9 @@ function App() {
         ))}
       </div>
       <p>Turns: {turns}</p>
+      <p>
+        Emojis flipped {emojisFlipped}/ {totalEmojis}
+      </p>
     </div>
   );
 }
