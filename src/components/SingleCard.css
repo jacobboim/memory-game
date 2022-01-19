@@ -1,6 +1,15 @@
 .card {
   position: relative;
 }
+.front {
+  width: 50%;
+  height: 100%;
+}
+
+.back {
+  width: 50%;
+  height: 50%;
+}
 
 .card img {
   width: 100%;
