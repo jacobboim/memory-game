@@ -7,8 +7,8 @@
 }
 
 .back {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .card img {
@@ -16,6 +16,8 @@
   display: block;
   border: 2px solid #fff;
   border-radius: 20px;
+  width: 100%;
+  height: 200px;
 }
 /* front of the card */
 .card .front {
@@ -38,4 +40,13 @@
 .flipped .back {
   transform: rotateY(90deg);
   transition-delay: 0s;
+}
+@media screen and (max-width: 600px) {
+  .card img {
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    width: 100%;
+    height: 90px;
+  }
 }
