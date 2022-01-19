@@ -10,6 +10,10 @@ const cardImages = [
   { src: "/img/yikesEmoji.png", matched: false },
   { src: "/img/thinkingEmoji.png", matched: false },
   { src: "/img/mindblownEmoji.png", matched: false },
+  { src: "/img/coolglassesEmoji.png", matched: false },
+  // { src: "/img/happybdayEmoji.png", matched: false },
+  { src: "/img/sleepingEmoji.png", matched: false },
+  // { src: "/img/winkEmoji.png", matched: false },
 ];
 
 function App() {
