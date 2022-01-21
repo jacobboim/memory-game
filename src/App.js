@@ -102,7 +102,7 @@ function App() {
       </div>
       <p>Turns: {turns}</p>
       <p>
-        Emojis flipped {emojisFlipped}/ {totalEmojis}
+        Emoji's flipped {emojisFlipped}/ {totalEmojis}
       </p>
     </div>
   );
