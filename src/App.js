@@ -87,7 +87,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Match the Emoji's</h1>
+      <h1>Match the Emojis</h1>
       <button onClick={shuffleCards}>New Game</button>
       <div className="card-grid">
         {cards.map((card) => (
@@ -102,7 +102,7 @@ function App() {
       </div>
       <p>Turns: {turns}</p>
       <p>
-        Emoji's flipped {emojisFlipped}/ {totalEmojis}
+        Emojis flipped {emojisFlipped}/ {totalEmojis}
       </p>
     </div>
   );
